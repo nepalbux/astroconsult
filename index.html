@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Tech Com Nepal - Astrology Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3176FF",
+              secondary: "#FFB800",
+              astroPurple: "#6C63FF",
+              astroPink: "#FF6B6B",
+              astroTeal: "#4ECDC4",
+              testimonialBg: "#F8FAFC",
+              footerBg: "#1A1A2E",
+              testimonial1: "#FF6B6B", // Red
+              testimonial2: "#6BFF6B", // Green
+              testimonial3: "#6B6BFF", // Blue
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      .slide {
+          display: none;
+          animation: fade 1.5s ease-in-out;
+      }
+      @keyframes fade {
+          from {opacity: 0.4}
+          to {opacity: 1}
+      }
+      .active-slide {
+          display: block;
+      }
+      .testimonial-slide {
+          display: none;
+      }
+      .active-testimonial {
+          display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <div class="fixed top-0 w-full z-r0 bg-white shadow-md">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center">
+            <h1 class="text-3xl font-bold-['arial'] text-primary">Astro Consult</h1>
+          </div>
+
+          <nav class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-gray-700-700 hover:text-primary">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-primary">About Us</a>
+            <a href="#consult" class="text-gray-700 hover:text-primary">Consult</a>
+            <a href="#testimonials" class="text-gray-700 hover:text-primary">Testimonials</a>
+            <a href="#contact" class="text-gray-700 hover:text-primary">Contact</a>
+          </nav>
+
+          <div class="flex items-center space-x-4">
+            <a
+              href="https://ptcnepal.com/"
+              class="flex items-center space-x-2 bg-black text-white px-4 py-2 !rounded-button"
+            >
+              <i class="ri-apple-fill text-xl"></i>
+              <span>iOS App</span>
+            </a>
+            <a
+              href="https://play.google.com/store/search?q=chrome&c=apps&hl=en"
+              class="flex items-center space-x-2 bg-primary text-white px-4 py-2 !rounded-button"
+            >
+              <i class="ri-android-fill text-xl"></i>
+              <span>Android App</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="mt-20">
+      <div class="relative h-[600px] overflow-hidden">
+        <div class="slide active-slide">
+          <div
+            class="absolute inset-0 bg-cover bg-center"
+            style="background-image: url('https://public.readdy.ai/ai/img_res/8bfd6968e75747d4296e847651ff7c62.jpg')"
+          >
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="container mx-auto px-4 h-full flex items-center">
+              <div class="text-white max-w-2xl">
+                <h2 class="text-5xl font-bold mb-6">
+                  Discover Your Cosmic Path
+                </h2>
+                <p class="text-xl mb-8">
+                  Expert astrological guidance to illuminate your journey
+                  through the stars
+                </p>
+                <a
+                  href="https://ptcnepal.com/"
+                 
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- More slides... -->
+
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about" class="container mx-auto px-4 py-20">
+      <div class="text-center mb-16 max-w-[90%] mx-auto">
+        <h2 class="text-4xl font-bold mb-4">About Us</h2>
+        <div class="text-left space-y-4 text-gray-600">
+          <p>
+            Welcome to <strong>PTC Nepal</strong>, your trusted destination for accurate and insightful KP (Krishnamurti Paddhati) astrology readings. Our mission is to help you unlock the precision of KP astrology, guiding you towards clarity in life’s important decisions through a scientific and systematic approach.
+          
+          
+          <p><strong>Why KP Astrology?</strong> KP Astrology is known for its accuracy, simplicity, and ability to provide precise predictions. Unlike traditional Vedic astrology, KP uses a unique system of Sub Lords and Cuspal Interlinks, making it highly effective for answering specific life questions related to career, marriage, health, finance, and more.
+          </p>
+          <p>
+            <strong>Our Services Include:</strong>
+            <ul class="list-disc list-inside">
+              <li>Accurate KP Chart Analysis – Detailed insights based on the KP System.</li>
+              <li>Horary Astrology (Prashna Kundali) – Instant answers to your pressing questions.</li>
+              <li>Career & Business Predictions – Plan your future with confidence.</li>
+              <li>Marriage & Relationship Compatibility – Understand your partner’s karmic connection.</li>
+              <li>Health & Financial Forecasts – Be prepared for upcoming challenges and opportunities.</li>
+              <li>Live Consultation with KP Experts – Personalized guidance from skilled astrologers.</li>
+            </ul>
+          </p>
+          <p>
+            At <strong>PTC Nepal</strong>, we are committed to bringing you the most reliable and authentic KP astrology services. Whether you are a beginner exploring astrology or an advanced learner seeking deeper knowledge, our platform serves as a hub for learning and consultation.
+          </p>
+          <p>
+            Let the precision of KP Astrology illuminate your path—because the stars have the answers!
+          </p>
+          <p class="text-primary font-bold">
+            PTC Nepal – Precision in Predictions, Clarity in Life! 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Consult Section -->
+    <div id="consult" class="container mx-auto px-4 py-20">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Our Services</h2>
+        <p class="text-gray-600">
+          Comprehensive astrological solutions for your life's journey
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-astroPurple/10 p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+          <div
+            class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-white rounded-full"
+          >
+            <i class="ri-star-line text-astroPurple text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-astroPurple">Birth Chart Analysis</h3>
+          <p class="text-gray-600">
+            Deep insights into your personality, life path, and potential
+          </p>
+        </div>
+
+        <div class="bg-astroPink/10 p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+          <div
+            class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-white rounded-full"
+          >
+            <i class="ri-moon-line text-astroPink text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-astroPink">Transit Predictions</h3>
+          <p class="text-gray-600">
+            Navigate upcoming planetary influences in your life
+          </p>
+        </div>
+
+        <div class="bg-astroTeal/10 p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+          <div
+            class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-white rounded-full"
+          >
+            <i class="ri-heart-line text-astroTeal text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-astroTeal">Relationship Compatibility</h3>
+          <p class="text-gray-600">
+            Understanding connections through astrological synastry
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="bg-testimonialBg py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Client Testimonials</h2>
+          <p class="text-gray-600">
+            What our clients say about their experience
+          </p>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto">
+          <div class="testimonial-slide active-testimonial">
+            <div class="bg-testimonial1/10 p-8 rounded-lg shadow-lg text-center">
+              <div class="w-24 h-24 mx-auto mb-6">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/client1.jpg"
+                  class="w-full h-full object-cover rounded-full"
+                  alt="..."
+                />
+              </div>
+              <p class="text-gray-600 mb-6">
+                "The insights provided by Python Tech Com Nepal were
+                incredibly accurate and helpful. Their astrologers are truly
+                gifted!"
+              </p>
+              <h4 class="font-bold">Bamadev Adhikari</h4>
+              <p class="text-gray-500">Marketing Director</p>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="bg-testimonial2/10 p-8 rounded-lg shadow-lg text-center">
+              <div class="w-24 h-24 mx-auto mb-6">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/client2.jpg"
+                  class="w-full h-full object-cover rounded-full"
+                  alt="..."
+                />
+              </div>
+              <p class="text-gray-600 mb-6">
+                "I was amazed by the accuracy of the predictions. It helped me make better decisions in my career and personal life."
+              </p>
+              <h4 class="font-bold">Hari Subedi</h4>
+              <p class="text-gray-500">Software Engineer</p>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="bg-testimonial3/10 p-8 rounded-lg shadow-lg text-center">
+              <div class="w-24 h-24 mx-auto mb-6">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/client3.jpg"
+                  class="w-full h-full object-cover rounded-full"
+                  alt="..."
+                />
+              </div>
+              <p class="text-gray-600 mb-6">
+                "The relationship compatibility analysis was spot on. It gave me a deeper understanding of my partner and our connection."
+              </p>
+              <h4 class="font-bold">Amar Aale</h4>
+              <p class="text-gray-500">Graphic Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+            <form class="space-y-6">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-primary"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-primary"
+                />
+              </div>
+              <div>
+                <textarea
+                  placeholder="Your Message"
+                  rows="5"
+                  class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-primary"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-primary text-white px-8 py-3 !rounded-button"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div>
+            <div class="h-[400px] rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.444769082919!2d84.0424822!3d28.1917164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995950e6ee4369b%3A0x991388524c421e95!2sPython%20Tech%20Com%20Nepal%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1715071234567!5m2!1sen!2snp"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-footerBg text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="font-font-bold-['Arial'] text-2xl mb-4">Astro Consult....</h3>
+            <p class="text-white-400">
+              Guiding you through the cosmic journey of life...............
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#home" class="text-gray-400 hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="text-gray-400 hover:text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#consult" class="text-gray-400 hover:text-white">Services</a>
+              </li>
+              <li>
+                <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Contact Info</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>+977 061 411 669</li>
+              <li>+977 061 411 779</li>
+              <li>+977 061 411 889</li>
+              <li>info@ptcnepal.com.com<.np/li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-facebook-fill text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-twitter-fill text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-instagram-fill text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>
+            © 2025 Python Tech Com Nepal Pvt. Ltd. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
